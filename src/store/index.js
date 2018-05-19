@@ -1,4 +1,4 @@
-import {createStore, combineReducers  } from 'redux';
+import {createStore, combineReducers} from 'redux';
 import reducers from '../reducers/index.js';
 import DevTools from '../DevTools.js';
 
