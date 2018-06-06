@@ -5,17 +5,20 @@ import 'bootstrap/dist/css/bootstrap.css';
 import DevTools from '../DevTools';
 
 const Navigation = props => (
-	<div>
-		<nav className="navbar navbar-expand-lg navbar-light">
-			<Link className="navbar-brand" to="/">Countries.js</Link>
-			<div clasName="collapse navbar-collapse">
-				<ul className="navbar-nav">
-					<li className="nav-link"><Link to="/countries">Countries</Link></li>
-					<li className="nav-link"><Link to="/continents">Continents</Link></li>
-					<li className="nav-link"><Link to="/contact">Contact</Link></li>
-				</ul>
-			</div>
-		</nav>
+	<div className="jumbotron jumbotron-fluid">
+		<div className="jumbotron-fade"></div>
+		<div className="container">
+			<nav className="navbar navbar-expand-lg">
+				<Link className="navbar-brand" to="/">Countries.js</Link>
+				<div className="collapse navbar-collapse">
+					<ul className="navbar-nav ml-auto">
+						<li className="nav-link"><Link to="/countries">Countries</Link></li>
+						<li className="nav-link"><Link to="/continents">Continents</Link></li>
+						<li className="nav-link"><Link to="/contact">Contact</Link></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 		<div className="container-fluid">
 			{props.children}
 		</div>
